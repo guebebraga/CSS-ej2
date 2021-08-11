@@ -1,0 +1,98 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;  
+}
+h1
+{
+color:darkcyan;    
+}
+
+body 
+{
+padding-left: 110px;
+padding-right: 110px;
+padding-top: 100px;
+padding-bottom: 90px;
+width: 100%;
+height: 100vh;
+display:grid;
+grid-template-areas: 'cabeza cabeza cabeza cabeza' 
+                     'izqside main main derside' 
+                     'izqside main main derside'
+                     'pie pie pie pie'
+                     'pie pie pie pie';  
+grid-template-columns: repeat(4 , 1fr);
+grid-template-rows: repeat(5 , 1fr);
+                    
+}
+header
+{
+padding: 40px;
+background-color: aqua; 
+font-family:Arial, Helvetica, sans-serif;
+font-size: x-large;
+color: white;
+align-items: center;
+justify-content: center;
+text-align: center;
+grid-area: cabeza;  
+}
+.lefS
+{
+padding: 70px;
+background-color: chocolate;
+font-family:Arial, Helvetica, sans-serif;
+font-size: x-large;
+color: white;
+justify-content: center;
+text-align: center;
+grid-area: izqside;
+}
+.rigS
+{
+padding: 70px;    
+background-color:rgb(255, 251, 0) ;
+font-family:Arial, Helvetica, sans-serif;
+font-size: x-large;
+color: white;
+justify-content: center;
+text-align: center;
+grid-area: derside;    
+}
+main
+{
+padding: 80px;    
+background-color: darkgreen;
+font-family:Arial, Helvetica, sans-serif;
+font-size: x-large;
+color:white;
+justify-content: center;
+text-align: center;
+grid-area: main;
+
+}
+footer
+{
+display: grid;
+grid-template-columns: repeat(4 , 1fr);
+padding: 40px;    
+background-color:darkmagenta;
+font-family:Arial, Helvetica, sans-serif;
+font-size: x-large;    
+color: white;
+justify-content: center;
+text-align: center;
+grid-area: pie;
+}
+footer div
+{
+padding: 35px;
+grid-template-columns: repeat(4, 1fr);
+column-gap: 5px;
+background-color:brown;  
+}
+footer
+{
+column-gap: 10px;
+}
